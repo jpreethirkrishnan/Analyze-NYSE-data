@@ -33,7 +33,7 @@ Mean of total revenue per year
 To calculate this, I made a pivot table with the 2 columns period_ending and total_revenue.
 
 
-
+Tools Used: Microsoft Excel, Powerpoint presentation
 
 
 
