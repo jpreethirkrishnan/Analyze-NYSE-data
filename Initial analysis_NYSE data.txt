@@ -1,0 +1,40 @@
+In this project, I analyzed real life Kaggle's New York Stock Exchange S&P 500 dataset.
+I have used only a subset of the large dataset provided by Kaggle that contains historical financial data from S&P 500 companies. 
+
+This data is provided by Udacity and is cleaned already.
+I have just changed the column names to not include spaces for better readability.
+
+
+First thing, View-> freeze panes -> freeze top row, so I know which column value I am looking at.
+
+The company with the maximum total revenue in any individual year .
+
+Then I renamed the cell ranges in the whole column such as Total_revenue into a named range called 'Total_revenue' same as the column name. I repeated the same for other columns like  Cost_of_Goods_Sold , Sales_General_and_Admin, Research_and_Development,  Other_Operating_Items, Ticker_symbol  and created named ranges for the all these respectively.
+
+I also renamed the whole sheet as a named range 'NYSE_data'.
+----------------------------------------------------
+
+Exploring data and summary statistics
+-----------------------------------
+
+The company with  the maximum total revenue in any individual year
+
+fomula - max(total_revenue)
+The company with this maximum revenue -formula  =INDEX(Ticker_Symbol,MATCH(MAX(Total_Revenue),Total_Revenue,0))
+
+This returns WMT company.
+
+Confirmed by searching for the maximum total revenue and confirmed that yes, WMT company returned the maximum total revenue in the year 2015.
+
+------------------------------
+Mean of total revenue per year
+--------------------------
+
+To calculate this, I made a pivot table with the 2 columns period_ending and total_revenue.
+
+
+
+
+
+
+
